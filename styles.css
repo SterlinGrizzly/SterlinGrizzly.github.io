@@ -1,0 +1,119 @@
+body {
+    background-color: #FAF8F6;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Keyframes for the slide-in and fade-in effect */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.navbar {
+    background-color: #FFD1DC;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.display-4 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.list-unstyled li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #333;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+img {
+    max-width: 100%;
+    max-height: 300px; /* Adjust this value based on your layout */
+    height: auto;
+    width: auto;
+}
+
+footer {
+    background-color: #6C3A5C;
+    color: #343a40;
+    padding-top: 20px;
+}
+
+footer .material-icons {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+footer a.text-reset {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a.text-reset:hover {
+    color: #007bff;
+}
+
+footer p, footer h5 {
+    margin: 0 0 15px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    transition: transform 0.3s ease;
+}
+
+.card:hover i {
+    transform: scale(1.2);
+}
+
+.card-footer {
+    font-weight: 500;
+}
