@@ -117,3 +117,108 @@ footer p, footer h5 {
 .card-footer {
     font-weight: 500;
 }
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7); /* Greyed out background */
+    text-align: center;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: transparent; /* Ensures no background color is added */
+    padding: 0; /* Remove any padding if it exists */
+    border: none; /* Remove any border if it exists */
+}
+
+.other-thing {
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: transparent; /* Ensures no background color is added */
+    padding: 0; /* Remove any padding if it exists */
+    border: #000;
+    border-radius: 5px;
+}
+
+.modal-body {
+    padding: 0; /* Ensure no padding around the image */
+}
+.modal-body img {
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image fits within its container without stretching */
+    background-color: transparent; /* No background */
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Darken card image on hover and display text */
+.work-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.work-card:hover img {
+    filter: brightness(70%);
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.work-card:hover .hover-text {
+    opacity: 1;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    pointer-events: none; /* Prevent text from interfering with click */
+}
